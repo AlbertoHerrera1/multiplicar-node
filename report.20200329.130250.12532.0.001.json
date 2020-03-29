@@ -1,0 +1,294 @@
+
+{
+  "header": {
+    "event": "Allocation failed - JavaScript heap out of memory",
+    "trigger": "FatalError",
+    "filename": "report.20200329.130250.12532.0.001.json",
+    "dumpEventTime": "2020-03-29T13:02:50Z",
+    "processId": 12532,
+    "cwd": "C:\\Users\\Alberto\\Documents\\Udemy Node\\03-Bases",
+    "commandLine": [
+      "node",
+      "app",
+      "crear",
+      "--limite",
+      "20000000",
+      "-b",
+      "89"
+    ],
+    "nodejsVersion": "v11.14.0",
+    "wordSize": 64,
+    "arch": "x64",
+    "platform": "win32",
+    "componentVersions": {
+      "node": "11.14.0",
+      "v8": "7.0.276.38-node.18",
+      "uv": "1.27.0",
+      "zlib": "1.2.11",
+      "brotli": "1.0.7",
+      "ares": "1.15.0",
+      "modules": "67",
+      "nghttp2": "1.37.0",
+      "napi": "4",
+      "llhttp": "1.1.1",
+      "http_parser": "2.8.0",
+      "openssl": "1.1.1b",
+      "cldr": "34.0",
+      "icu": "63.1",
+      "tz": "2018e",
+      "unicode": "11.0"
+    },
+    "release": {
+      "name": "node",
+      "headersUrl": "https://nodejs.org/download/release/v11.14.0/node-v11.14.0-headers.tar.gz",
+      "sourceUrl": "https://nodejs.org/download/release/v11.14.0/node-v11.14.0.tar.gz",
+      "libUrl": "https://nodejs.org/download/release/v11.14.0/win-x64/node.lib"
+    },
+    "osName": "Windows_NT",
+    "osRelease": "10.0.17763",
+    "osVersion": "Windows 10 Home Single Language",
+    "osMachine": "x86_64",
+    "host": "DESKTOP-3493KK3"
+  },
+  "javascriptStack": {
+    "message": "No stack.",
+    "stack": [
+      "Unavailable."
+    ]
+  },
+  "nativeStack": [
+    {
+      "pc": "0x00007ff7fcd3d24e",
+      "symbol": "std::basic_ios<char,std::char_traits<char> >::fill+16366"
+    },
+    {
+      "pc": "0x00007ff7fcd3c0f9",
+      "symbol": "std::basic_ios<char,std::char_traits<char> >::fill+11929"
+    },
+    {
+      "pc": "0x00007ff7fcd3b923",
+      "symbol": "std::basic_ios<char,std::char_traits<char> >::fill+9923"
+    },
+    {
+      "pc": "0x00007ff7fce2c1d2",
+      "symbol": "uv_loop_fork+89362"
+    },
+    {
+      "pc": "0x00007ff7fd25454e",
+      "symbol": "v8::internal::FatalProcessOutOfMemory+798"
+    },
+    {
+      "pc": "0x00007ff7fd254487",
+      "symbol": "v8::internal::FatalProcessOutOfMemory+599"
+    },
+    {
+      "pc": "0x00007ff7fd307f64",
+      "symbol": "v8::internal::Heap::RootIsImmortalImmovable+14068"
+    },
+    {
+      "pc": "0x00007ff7fd2fdd72",
+      "symbol": "v8::internal::Heap::CollectGarbage+7234"
+    },
+    {
+      "pc": "0x00007ff7fd2fc588",
+      "symbol": "v8::internal::Heap::CollectGarbage+1112"
+    },
+    {
+      "pc": "0x00007ff7fd305eb7",
+      "symbol": "v8::internal::Heap::RootIsImmortalImmovable+5703"
+    },
+    {
+      "pc": "0x00007ff7fd305f36",
+      "symbol": "v8::internal::Heap::RootIsImmortalImmovable+5830"
+    },
+    {
+      "pc": "0x00007ff7fd43de01",
+      "symbol": "v8::internal::Factory::NewFillerObject+49"
+    },
+    {
+      "pc": "0x00007ff7fd4f7cd6",
+      "symbol": "v8::internal::StoreBuffer::StoreBufferOverflow+27190"
+    },
+    {
+      "pc": "0x0000027475ed0481",
+      "symbol": ""
+    }
+  ],
+  "javascriptHeap": {
+    "totalMemory": 1500200960,
+    "totalCommittedMemory": 1500200960,
+    "usedMemory": 1467831760,
+    "availableMemory": 28763392,
+    "memoryLimit": 1526909922,
+    "heapSpaces": {
+      "read_only_space": {
+        "memorySize": 524288,
+        "committedMemory": 524288,
+        "capacity": 515584,
+        "used": 33520,
+        "available": 482064
+      },
+      "new_space": {
+        "memorySize": 6291456,
+        "committedMemory": 6291456,
+        "capacity": 3093504,
+        "used": 1847584,
+        "available": 1245920
+      },
+      "old_space": {
+        "memorySize": 1490227200,
+        "committedMemory": 1490227200,
+        "capacity": 1465364768,
+        "used": 1464846352,
+        "available": 518416
+      },
+      "code_space": {
+        "memorySize": 1048576,
+        "committedMemory": 1048576,
+        "capacity": 615584,
+        "used": 615584,
+        "available": 0
+      },
+      "map_space": {
+        "memorySize": 536576,
+        "committedMemory": 536576,
+        "capacity": 239600,
+        "used": 239600,
+        "available": 0
+      },
+      "large_object_space": {
+        "memorySize": 1572864,
+        "committedMemory": 1572864,
+        "capacity": 26766112,
+        "used": 249120,
+        "available": 26516992
+      },
+      "new_large_object_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 0,
+        "used": 0,
+        "available": 0
+      }
+    }
+  },
+  "resourceUsage": {
+    "userCpuSeconds": 29.265,
+    "kernelCpuSeconds": 0.796,
+    "cpuConsumptionPercent": 130.7,
+    "maxRss": 1538392064,
+    "pageFaults": {
+      "IORequired": 458574,
+      "IONotRequired": 0
+    },
+    "fsActivity": {
+      "reads": 55,
+      "writes": 6
+    }
+  },
+  "libuv": [
+  ],
+  "environmentVariables": {
+    "=::": "::\\",
+    "=C:": "C:\\Users\\Alberto\\Documents\\Udemy Node\\03-Bases",
+    "=ExitCode": "00000000",
+    "ALLUSERSPROFILE": "C:\\ProgramData",
+    "ANDROID_HOME": "C:\\Users\\Alberto\\AppData\\Local\\Android\\Sdk",
+    "ANDROID_NDK_ROOT": "F:\\NVPACK\\android-ndk-r15c",
+    "ANT_HOME": "F:\\NVPACK\\apache-ant-1.8.2",
+    "APPDATA": "C:\\Users\\Alberto\\AppData\\Roaming",
+    "CommonProgramFiles": "C:\\Program Files\\Common Files",
+    "CommonProgramFiles(x86)": "C:\\Program Files (x86)\\Common Files",
+    "CommonProgramW6432": "C:\\Program Files\\Common Files",
+    "COMPUTERNAME": "DESKTOP-3493KK3",
+    "ComSpec": "C:\\WINDOWS\\system32\\cmd.exe",
+    "configsetroot": "C:\\WINDOWS\\ConfigSetRoot",
+    "DART_SDK": "C:\\Program Files\\Dart\\dart-sdk",
+    "DriverData": "C:\\Windows\\System32\\Drivers\\DriverData",
+    "FPS_BROWSER_APP_PROFILE_STRING": "Internet Explorer",
+    "FPS_BROWSER_USER_PROFILE_STRING": "Default",
+    "GOPATH": "C:\\Users\\Alberto\\go",
+    "GRADLE_HOME": "F:\\NVPACK\\gradle-4.1-rc-2",
+    "HOMEDRIVE": "C:",
+    "HOMEPATH": "\\Users\\Alberto",
+    "JAVA_HOME": "C:\\Program Files (x86)\\Java\\jdk1.8.0_181",
+    "LOCALAPPDATA": "C:\\Users\\Alberto\\AppData\\Local",
+    "LOGONSERVER": "\\\\DESKTOP-3493KK3",
+    "NDKROOT": "F:\\NVPACK\\android-ndk-r15c",
+    "NDK_ROOT": "F:\\NVPACK\\android-ndk-r15c",
+    "NUMBER_OF_PROCESSORS": "8",
+    "NVPACK_NDK_TOOL_VERSION": "4.9",
+    "NVPACK_NDK_VERSION": "android-ndk-r15c",
+    "NVPACK_ROOT": "F:\\\\NVPACK",
+    "OneDrive": "C:\\Users\\Alberto\\OneDrive",
+    "OneDriveConsumer": "C:\\Users\\Alberto\\OneDrive",
+    "OS": "Windows_NT",
+    "Path": "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\apache-maven-3.5.3-bin\\apache-maven-3.5.3\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\dotnet\\;C:\\android-ndk-r16b;C:\\Users\\Alberto\\AppData\\Local\\Programs\\Python\\Python36\\;C:\\Program Files\\CMake\\bin;C:\\openCV\\opencv\\build\\x64\\vc14;C:\\openCV\\opencv\\build\\bin;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\nodejs\\;C:\\Program Files (x86)\\Xoreax\\IncrediBuild;C:\\Go\\bin;C:\\Program Files (x86)\\Java\\jdk1.8.0_181\\bin;C:\\Users\\Alberto\\'.npm-global';C:\\Program Files\\Git\\cmd;C:\\Program Files\\Dart\\dart-sdk\\bin;C:\\Alberto\\local;C:\\Users\\Alberto\\Documents\\openssl\\bin;C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\;F:\\NVPACK\\android-sdk-windows\\extras\\android\\support;F:\\NVPACK\\android-sdk-windows\\build-tools;F:\\NVPACK\\android-sdk-windows\\platform-tools;F:\\NVPACK\\android-sdk-windows\\tools;F:\\NVPACK\\gradle-4.1-rc-2\\bin;F:\\NVPACK\\apache-ant-1.8.2\\bin;F:\\NVPACK\\jdk1.8.0_77\\bin;F:\\NVPACK\\android-ndk-r15c;C:\\Users\\Alberto\\AppData\\Local\\Programs\\Python\\Python36\\Scripts\\;C:\\Users\\Alberto\\AppData\\Local\\Programs\\Python\\Python36\\;C:\\Users\\Alberto\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\Alberto\\AppData\\Local\\atom\\bin;C:\\Users\\Alberto\\AppData\\Local\\Programs\\MiKTeX 2.9\\miktex\\bin\\x64\\;C:\\appengine-java-sdk-1.9.63;C:\\Gradle\\gradle-4.7\\bin;C:\\Users\\Alberto\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\Alberto\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Alberto\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\Alberto\\AppData\\Roaming\\npm;C:\\'.npm-global';C:\\Users\\Alberto\\go\\bin;C:\\src\\flutter\\bin;",
+    "PATHEXT": ".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC",
+    "PROCESSOR_ARCHITECTURE": "AMD64",
+    "PROCESSOR_IDENTIFIER": "Intel64 Family 6 Model 158 Stepping 9, GenuineIntel",
+    "PROCESSOR_LEVEL": "6",
+    "PROCESSOR_REVISION": "9e09",
+    "ProgramData": "C:\\ProgramData",
+    "ProgramFiles": "C:\\Program Files",
+    "ProgramFiles(x86)": "C:\\Program Files (x86)",
+    "ProgramW6432": "C:\\Program Files",
+    "PROMPT": "$P$G",
+    "PSModulePath": ";",
+    "PUBLIC": "C:\\Users\\Public",
+    "SESSIONNAME": "Console",
+    "SystemDrive": "C:",
+    "SystemRoot": "C:\\WINDOWS",
+    "TEMP": "C:\\Users\\Alberto\\AppData\\Local\\Temp",
+    "TMP": "C:\\Users\\Alberto\\AppData\\Local\\Temp",
+    "USERDOMAIN": "DESKTOP-3493KK3",
+    "USERDOMAIN_ROAMINGPROFILE": "DESKTOP-3493KK3",
+    "USERNAME": "Alberto",
+    "USERPROFILE": "C:\\Users\\Alberto",
+    "VS160COMCOMNTOOLS": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\Common7\\Tools\\",
+    "windir": "C:\\WINDOWS"
+  },
+  "sharedObjects": [
+    "C:\\Program Files\\nodejs\\node.exe",
+    "C:\\WINDOWS\\SYSTEM32\\ntdll.dll",
+    "C:\\Program Files\\AVAST Software\\Avast\\aswhook.dll",
+    "C:\\WINDOWS\\System32\\KERNEL32.DLL",
+    "C:\\WINDOWS\\System32\\KERNELBASE.dll",
+    "C:\\WINDOWS\\System32\\PSAPI.DLL",
+    "C:\\WINDOWS\\System32\\WS2_32.dll",
+    "C:\\WINDOWS\\System32\\RPCRT4.dll",
+    "C:\\WINDOWS\\System32\\ADVAPI32.dll",
+    "C:\\WINDOWS\\System32\\msvcrt.dll",
+    "C:\\WINDOWS\\System32\\sechost.dll",
+    "C:\\WINDOWS\\System32\\USER32.dll",
+    "C:\\WINDOWS\\System32\\win32u.dll",
+    "C:\\WINDOWS\\System32\\GDI32.dll",
+    "C:\\WINDOWS\\System32\\gdi32full.dll",
+    "C:\\WINDOWS\\System32\\msvcp_win.dll",
+    "C:\\WINDOWS\\System32\\ucrtbase.dll",
+    "C:\\WINDOWS\\System32\\CRYPT32.dll",
+    "C:\\WINDOWS\\System32\\MSASN1.dll",
+    "C:\\WINDOWS\\System32\\bcrypt.dll",
+    "C:\\WINDOWS\\SYSTEM32\\dbghelp.dll",
+    "C:\\WINDOWS\\SYSTEM32\\IPHLPAPI.DLL",
+    "C:\\WINDOWS\\SYSTEM32\\USERENV.dll",
+    "C:\\WINDOWS\\System32\\profapi.dll",
+    "C:\\WINDOWS\\SYSTEM32\\WINMM.dll",
+    "C:\\WINDOWS\\SYSTEM32\\WINMMBASE.dll",
+    "C:\\WINDOWS\\System32\\cfgmgr32.dll",
+    "C:\\WINDOWS\\System32\\IMM32.DLL",
+    "C:\\WINDOWS\\System32\\powrprof.dll",
+    "C:\\WINDOWS\\system32\\uxtheme.dll",
+    "C:\\WINDOWS\\System32\\combase.dll",
+    "C:\\WINDOWS\\System32\\bcryptPrimitives.dll",
+    "C:\\WINDOWS\\system32\\mswsock.dll",
+    "C:\\WINDOWS\\System32\\kernel.appcore.dll",
+    "C:\\WINDOWS\\system32\\napinsp.dll",
+    "C:\\WINDOWS\\system32\\pnrpnsp.dll",
+    "C:\\WINDOWS\\SYSTEM32\\DNSAPI.dll",
+    "C:\\WINDOWS\\System32\\NSI.dll",
+    "C:\\WINDOWS\\System32\\winrnr.dll",
+    "C:\\WINDOWS\\system32\\NLAapi.dll",
+    "C:\\WINDOWS\\system32\\wshbth.dll"
+  ]
+}
